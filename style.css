@@ -87,9 +87,17 @@ h1 {
   background-color: #ddd;
 }
 
+@keyframes colorTransition {
+  100% { background-color: red; }
+70% { background-color: yellow; }
+  20% { background-color: green; }
+
+}
 #progress-bar {
   height: 20px;
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
+  
+  animation: colorTransition 40s infinite;
   width: 0%;
 }
 
