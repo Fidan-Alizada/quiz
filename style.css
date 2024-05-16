@@ -1,0 +1,98 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #f8a1a1, #ee6565 , #ff0000);
+  color: #333;
+  background-image: url('https://s3.eu-west-2.amazonaws.com/img.creativepool.com/files/candidate/portfolio/full/1357867.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#quiz-task {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff9f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #201d1d9d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f73636;
+}
+
+#start-btn, #next-btn {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-btn:hover, #next-btn:hover {
+  background-color: #ff0000;
+}
+
+.correct {
+  background-color: #28a745; 
+  color: white;
+}
+
+.wrong {
+  background-color: #ff0019; 
+  color: white;
+}
+
+h1 {
+  color: #ff0019;
+  text-align: center;
+}
+
+#progress-bar-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#progress-bar {
+  height: 20px;
+  background-color: #4CAF50;
+  width: 0%;
+}
+
+.hide {
+  display: none;
+}
