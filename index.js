@@ -235,3 +235,31 @@ function updateProgressBar(currentTime, duration) {
   const progress = ((duration - currentTime) / duration) * 100;
   progressBar.style.width = progress + '%';
 }
+
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const nameModal = document.getElementById('nameModal');
+  const startQuizBtn = document.getElementById('startQuizBtn');
+
+  // Show the modal when the page loads
+  nameModal.style.display = 'block';
+
+  // Close the modal when the close button is clicked
+  document.querySelector('.close').addEventListener('click', () => {
+    nameModal.style.display = 'none';
+  });
+
+  // Start the quiz when the Start Quiz button is clicked
+  startQuizBtn.addEventListener('click', () => {
+    const adminName = document.getElementById('adminName').value.trim();
+    if (adminName !== '') {
+      nameModal.style.display = 'none';
+      startGame(adminName); // Pass the admin's name to the startGame function
+    } else {
+      alert('Please enter your name to start the quiz.');
+    }
+  });
+});
+
+// Other existing JavaScript code for the quiz functionality...
