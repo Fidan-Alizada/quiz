@@ -7,13 +7,15 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
+  apiKey: "AIzaSyBDGlxsvrQdnoKuB6pDRC3xIx0NzBULbYg",
+  authDomain: "quiz-f19a5.firebaseapp.com",
+  projectId: "quiz-f19a5",
+  storageBucket: "quiz-f19a5.appspot.com",
+  messagingSenderId: "599632535723",
+  appId: "1:599632535723:web:45a7a219a990d0808717ee",
+  measurementId: "G-7DBTC98PEN"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
