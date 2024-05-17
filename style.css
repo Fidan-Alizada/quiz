@@ -145,3 +145,16 @@ align-items: center;
   text-decoration: none;
   cursor: pointer;
 }
+
+#restart-btn {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restart-btn:hover {
+  background-color: #ff0000;
+}
