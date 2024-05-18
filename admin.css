@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #f8a1a1, #ee6565, #ff0000);
+    color: #333;
+    background-image: url('https://s3.eu-west-2.amazonaws.com/img.creativepool.com/files/candidate/portfolio/full/1357867.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  #admin-task {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff9f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #ff0019;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  input[type="text"], input[type="radio"], button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff0000;
+  }
+  
+  table {
+    width: 30%;
+    border-collapse: collapse;
+    background-color: #ddddddac;
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  .btn {
+    padding: 10px;
+    background-color: #201d1d9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #f73636;
+  }

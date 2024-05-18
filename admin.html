@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
+    <link rel="stylesheet" href="./admin.css">
 </head>
 <body>
+  <div id="admin-task">
+    <h1>Admin Panel</h1>
+    <div id="add-question">
+      <h2>Add New Question</h2>
+      <form id="question-form">
+        <label for="question-text">Question:</label>
+        <input type="text" id="question-text" required><br>
+        <label for="answer1">Answer 1:</label>
+        <input type="text" id="answer1" required>
+        <input type="radio" name="correct-answer" value="0" required> Correct<br>
+        <label for="answer2">Answer 2:</label>
+        <input type="text" id="answer2" required>
+        <input type="radio" name="correct-answer" value="1"> Correct<br>
+        <label for="answer3">Answer 3:</label>
+        <input type="text" id="answer3" required>
+        <input type="radio" name="correct-answer" value="2"> Correct<br>
+        <label for="answer4">Answer 4:</label>
+        <input type="text" id="answer4" required>
+        <input type="radio" name="correct-answer" value="3"> Correct<br>
+        <button type="submit">Add Question</button>
+      </form>
+    </div>
+    <div id="question-list">
+      <h2>Existing Questions</h2>
+      <table id="questions-table">
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Answers</th>
+            <th>Correct Answer</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+  
+        </tbody>
+      </table>
+    </div>
+  </div>
+
     <table id="data-table">
         <thead>
             <tr>
@@ -14,7 +55,7 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Data will be populated here -->
+        
         </tbody>
     </table>
 

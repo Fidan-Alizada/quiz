@@ -38,8 +38,7 @@ const questions = [
     ],
   },
   {
-    question:
-      "What is the nickname of the Formula 1 Grand Prix held in Monaco?",
+    question: "What is the nickname of the Formula 1 Grand Prix held in Monaco?",
     answers: [
       { text: "The Jewel in the Crown", correct: true },
       { text: "The Flying Lap", correct: false },
@@ -66,8 +65,7 @@ const questions = [
     ],
   },
   {
-    question:
-      "Who holds the record for the most championship titles in Formula 1 history?",
+    question: "Who holds the record for the most championship titles in Formula 1 history?",
     answers: [
       { text: "Michael Schumacher", correct: false },
       { text: "Lewis Hamilton", correct: true },
@@ -76,8 +74,7 @@ const questions = [
     ],
   },
   {
-    question:
-      "How many Grand Prix races are typically held in a Formula 1 season?",
+    question: "How many Grand Prix races are typically held in a Formula 1 season?",
     answers: [
       { text: "18", correct: false },
       { text: "22", correct: true },
@@ -86,8 +83,7 @@ const questions = [
     ],
   },
   {
-    question:
-      "Which team holds the record for the most constructor championships in Formula 1?",
+    question: "Which team holds the record for the most constructor championships in Formula 1?",
     answers: [
       { text: "Mercedes", correct: false },
       { text: "Ferrari", correct: true },
@@ -159,7 +155,7 @@ function startGame() {
 
 function setNextQuestion() {
   resetState();
-  showQuestion(shuffledQuestions[currentQuestionIndex]);
+  showQuestion(shuffledQuestions[currentQuestionIndex], currentQuestionIndex + 1, shuffledQuestions.length);
   startTimer(30, document.getElementById("timer"));
   updateProgressBar(30, 30);
 }
@@ -172,8 +168,8 @@ function resetState() {
   }
 }
 
-function showQuestion(question) {
-  questionElement.innerText = question.question;
+function showQuestion(question, questionNumber, totalQuestions) {
+  questionElement.innerText = ` ${questionNumber} of ${totalQuestions}: ${question.question}`;
   question.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerText = answer.text;
