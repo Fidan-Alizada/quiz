@@ -41,7 +41,7 @@ body {
 
 .btn {
   padding: 10px 15px;
-  background-color: #201d1d9d;
+  background-color: #201d1d88;
   color: white;
   border: none;
   border-radius: 5px;
@@ -50,7 +50,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #f73636;
+  background-color: #4b434378;
 }
 
 #start-btn, #next-btn {
